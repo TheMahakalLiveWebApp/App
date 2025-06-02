@@ -1,0 +1,120 @@
+/* Nav Bar Styling */
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+  width: 100vw;
+  height: 68px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(18px);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.weblogo {
+  width: auto;
+  height: 100%;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+/* Web links (desktop) */
+.weblinks {
+  width: auto;
+  padding: 0px 40px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Individual links */
+.homelink,
+.aboutlink,
+.howtoplaylink,
+.faqlink {
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+
+  margin-left: 5px;
+}
+
+
+
+/* Mobile menu toggle button */
+.menubar {
+  display: none;
+}
+
+.menuBtn {
+  background: none;
+  color: white;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Show weblinks vertically on mobile */
+.mobileVisible {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 68px;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.253);
+  padding: 20px;
+  gap: 15px;
+  z-index: 1000;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.movilenotvisible {
+  display: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+
+  .NavBar {
+    padding: 10px 20px;
+  }
+
+  .weblogo {
+    width: auto;
+  }
+
+  .weblinks {
+    display: none;
+    width: 100%;
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .menubar {
+    display: block;
+  }
+
+  .homelink,
+  .aboutlink,
+  .howtoplaylink,
+  .faqlink {
+    margin: 0;
+  }
+
+
+
+}

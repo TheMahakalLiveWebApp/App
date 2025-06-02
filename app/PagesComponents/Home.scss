@@ -1,0 +1,271 @@
+@use "sass:color";
+
+
+body {
+  overflow: auto; // Allow scrolling
+  scrollbar-width: none; // Firefox
+  -ms-overflow-style: none; // Internet Explorer 10+
+
+  &::-webkit-scrollbar {
+    display: none; // Chrome, Safari, Opera
+  }
+}
+
+
+// Color Variables
+$bg: #ffffff;
+$text: #1f2937;
+$primary: #3b82f6;
+$secondary: #60a5fa;
+$bg-accent: #e0e7ff;
+$border-radius: 12px;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Base Container Styling
+.hero-sec,
+.features-sec,
+.guide-sec,
+.reasons-sec {
+    padding: 2rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+    color: $text;
+}
+
+// HERO SECTION
+.hero-sec {
+    position: relative;
+    min-height: 400px;
+    background-image: url("../../Assests/Hero1.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .glass {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(6px);
+        background-color: rgba(255, 255, 255, 0.14);
+        z-index: 1;
+    }
+
+    .hero-info {
+        position: relative;
+        z-index: 2;
+        max-width: 700px;
+        padding: 2rem;
+        text-align: center;
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff94;
+        }
+
+        button {
+            background-color: $primary;
+            color: $bg;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: $border-radius;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                 background-color: color.scale($primary, $lightness: -10%);
+            }
+        }
+    }
+}
+
+// FEATURES SECTION
+.features-sec {
+    h3 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: $primary;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+
+        .feature {
+            background: $bg-accent;
+            padding: 1.5rem;
+            border-radius: $border-radius;
+            flex: 1 1 220px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .feature-icon {
+                margin-bottom: 0.8rem;
+                width: 4rem;
+            }
+
+            .feature-title {
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+                font-size: 1.1rem;
+                color: $text;
+            }
+
+            .feature-desc {
+                color: $text;
+                font-size: 0.95rem;
+            }
+        }
+    }
+}
+
+// GUIDE SECTION
+.guide-sec {
+    h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: $primary;
+        font-size: 2rem;
+    }
+
+    .guide {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+
+        .guide-image {
+            flex: 1 1 45%;
+
+            .guide-hero-img {
+                width: 100%;
+                height: auto;
+                border-radius: $border-radius;
+            }
+        }
+
+        .guide-steps {
+            flex: 1 1 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-size: 1rem;
+            color: $text;
+            font-size: 1.2rem;
+
+            p {
+                font-weight: bold;
+                color: $primary;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+// REASONS SECTION
+.reasons-sec {
+    h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: $primary;
+        font-size: 2rem;
+    }
+
+    .reasons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+
+        .reason {
+            background: $bg-accent;
+            padding: 1.5rem;
+            border-radius: $border-radius;
+            flex: 1 1 220px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .reason-icon {
+                color: $secondary;
+                margin-bottom: 0.8rem;
+                width: 4rem;
+
+            }
+
+            .reason-title {
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+                font-size: 1.1rem;
+                color: $text;
+            }
+
+            .reason-desc {
+                color: $text;
+                font-size: 0.95rem;
+            }
+        }
+    }
+}
+
+// RESPONSIVE DESIGN
+@media (max-width: 768px) {
+    .guide {
+        flex-direction: column;
+
+        .guide-steps,
+        .guide-image {
+            flex: 1 1 100%;
+        }
+    }
+
+    .hero-info {
+        padding: 1.5rem;
+    }
+
+    .hero-info h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .features,
+    .reasons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-info h1 {
+        font-size: 1.3rem;
+    }
+
+    .guide-steps {
+        font-size: 0.95rem;
+    }
+}

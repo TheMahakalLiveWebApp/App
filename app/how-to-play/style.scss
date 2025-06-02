@@ -1,0 +1,86 @@
+
+
+.upper-part{
+    width: 100%;
+    height: 60px;
+    background-color: #1976d2;
+
+}
+
+.HowToPlay-Page{
+    margin-top: 30px;
+    padding: 20px 60px;
+    padding-top: 0;
+    .heading{
+        text-align: left;
+        font-size: 2.2rem;
+        font-weight: 600;
+
+        margin-bottom: 10px;
+        margin-top: 30px;
+        color: #1976d2;
+    }
+    .info{
+        font-size: 1.2rem;
+        p{
+            display: inline;
+        }
+    }
+    .step-head{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    .guide{
+        .heading{
+            margin-bottom: 20px;
+        }
+        .step-head{
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #121212;
+        }
+        ul{
+            margin-left: 30px;
+            font-size: 20px;
+            li{
+                margin-bottom: 5px;
+
+            }
+        }
+    }
+
+    ul{
+        margin-left: 30px;
+    }
+
+    .gamerules{
+        .subheading{
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        li{
+            font-size:20px;
+            margin-bottom: 8px;
+            p{
+                display: inline;
+                font-weight:600;
+            }
+        }
+    }
+
+    .whocanplay{
+        li{
+            font-size: 20px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            p{
+                display: inline;
+                font-weight: normal;
+            }
+        }
+    }
+    
+}
