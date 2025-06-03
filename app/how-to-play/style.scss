@@ -1,86 +1,146 @@
 
 
-.upper-part{
-    width: 100%;
-    height: 60px;
-    background-color: #1976d2;
 
-}
+.HowToPlay-Page {
+  font-family: 'Segoe UI', sans-serif;
+  color: #1c1c1c;
+  background-color: #f9f9f9;
+  padding: 40px;
+  padding-top: 80px;
+  p{
+    display: inline;
+  }
 
-.HowToPlay-Page{
-    margin-top: 30px;
-    padding: 20px 60px;
-    padding-top: 0;
-    .heading{
-        text-align: left;
-        font-size: 2.2rem;
+  .heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0d47a1;
+  }
+
+  .subheading {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .info,
+  .guide,
+  .gamerules,
+  .whocanplay {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    .heading {
+      font-size: 1.5rem;
+      text-align: left;
+      color: #0d47a1;
+    }
+
+    .subheading {
+      font-size: 1.2rem;
+    }
+
+    .info,
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+
+      li {
+        margin-bottom: 12px;
+        line-height: 1.5;
+
+        p {
+          font-weight: 600;
+          display: inline;
+          color: #0d47a1;
+        }
+      }
+    }
+  }
+
+  .stepscon {
+    .step {
+      margin-bottom: 30px;
+
+      .step-head {
         font-weight: 600;
-
+        font-size: 1.3rem;
+        color: #2e7d32;
         margin-bottom: 10px;
-        margin-top: 30px;
-        color: #1976d2;
-    }
-    .info{
-        font-size: 1.2rem;
-        p{
-            display: inline;
-        }
-    }
-    .step-head{
-        font-size: 1.6rem;
-        font-weight: 400;
-    }
+      }
 
-    .guide{
-        .heading{
-            margin-bottom: 20px;
-        }
-        .step-head{
-            font-weight: 600;
-            font-size: 1.3rem;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            color: #121212;
-        }
-        ul{
-            margin-left: 30px;
-            font-size: 20px;
-            li{
-                margin-bottom: 5px;
+      ul {
+        padding-left: 20px;
 
-            }
+        li {
+          margin-bottom: 10px;
+          font-size: 16px;
+          line-height: 1.5;
         }
+      }
     }
-
-    ul{
-        margin-left: 30px;
-    }
-
-    .gamerules{
-        .subheading{
-            margin-bottom: 20px;
-            font-size: 20px;
-        }
-        li{
-            font-size:20px;
-            margin-bottom: 8px;
-            p{
-                display: inline;
-                font-weight:600;
-            }
-        }
-    }
-
-    .whocanplay{
-        li{
-            font-size: 20px;
-            margin-bottom: 8px;
-            font-weight: 600;
-            p{
-                display: inline;
-                font-weight: normal;
-            }
-        }
-    }
-    
+  }
 }
+
+/* Responsive */
+@media screen and (max-width: 880px) {
+  .HowToPlay-Page {
+    padding: 20px;
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .HowToPlay-Page {
+    padding: 20px;
+    padding-top: 80px;
+
+    .heading {
+      text-align: center;
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .HowToPlay-Page {
+    padding: 15px;
+    padding-top: 80px;
+    font-size: 14px;
+
+    .heading {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .subheading {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .info,
+    p,
+    li {
+      font-size: 14px !important;
+    }
+
+    .rules,
+    ul {
+      padding-left: 15px;
+    }
+  }
+}
+
+
+

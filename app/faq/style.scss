@@ -5,9 +5,9 @@
 }
 
 .faq-page{
-    margin-top: 40px;
+    background-color: #f9f9f9;
     padding: 20px 80px;
-    padding-top: 0;
+    padding-top: 40px;
     .heading{
         font-size: 2.2rem;
         font-weight: 800;
@@ -24,13 +24,14 @@
 
     .FAQS{
        .quecontainer{
-            border: 2px solid #1976d2;
+            // border: 2px solid #1976d2;
             margin-bottom: 20px;
 
             padding: 60px 30px;
-            background-color: #1976d2;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             border-radius: 20px;
-            color: white;
+            color: #1976d2;
 
             .question{
                 font-weight: 600;
@@ -44,6 +45,7 @@
                 font-size: 20px;
                 letter-spacing: 1.3px;
                 line-height: 30px;
+                color: #2e7d32;
                 p{
                     display: inline;
                     font-weight: 600;
@@ -68,3 +70,21 @@
     }
 
 }
+
+
+@media screen and (max-width: 800px) {
+        .faq-page{
+            padding: 20px 60px;
+        }
+}
+@media screen and (max-width: 700px) {
+        .faq-page{
+            padding: 20px 40px;
+        }
+}
+@media screen and (max-width: 600px) {
+        .faq-page{
+            padding: 20px 20px;
+        }
+}
+

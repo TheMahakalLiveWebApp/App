@@ -16,22 +16,22 @@ const NavBar = () => {
           <Link href="/about" className={styles.aboutlink + " links"}>About Us</Link>
           <Link href="/how-to-play" className={styles.howtoplaylink + " links"}>How To Play</Link>
           <Link href="/faq" className={styles.faqlink + " links"}>FAQ</Link>
-          <Link href="/contact" className={"contact-us-link" + " links"}><button>Contact</button></Link>
+          <Link href="/contact" className={"contact-us-link" + " links" + styles.contactbtn}><button>Contact</button></Link>
         </div>
       <div className={styles.NavBar}>
         <div className={styles.weblogo}>
           <div className="logo">
-            <h3><Link href="/" style={{color:"white"}}>Logo Design</Link></h3>
+            <h3><Link href="/" className={styles.weblogotext} style={{color:"white"}}>Logo Design</Link></h3>
           </div>
         </div>
 
         {/* Web Links - shown on large screens */}
       <div className={styles.weblinks }>
-          <Link href="/" className={styles.homelink + " links active"}>Home</Link>
+          <Link href="/" className={styles.homelink + " links"}>Home</Link>
           <Link href="/about" className={styles.aboutlink + " links"}>About Us</Link>
           <Link href="/how-to-play" className={styles.howtoplaylink + " links"}>How To Play</Link>
           <Link href="/faq" className={styles.faqlink + " links"}>FAQ</Link>
-          <Link href="/contact" className={"contact-us-link" + " links"}><button>Contact</button></Link>
+          <Link href="/contact" className={"contact-us-link" + " links" + styles.contactbtn}><button>Contact</button></Link>
         </div>
 
         {/* Mobile Menu Button */}

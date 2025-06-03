@@ -26,6 +26,11 @@
   align-items: center;
 }
 
+.weblogotext{
+  text-decoration: none;
+}
+
+
 /* Web links (desktop) */
 .weblinks {
   width: auto;

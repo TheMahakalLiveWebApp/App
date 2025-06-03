@@ -61,10 +61,10 @@ const HowToPlay = () => {
         <>
             <div className="upper-part"></div>
             <div className="HowToPlay-Page">
+                <div className="info">
                 <div className="heading">
                     How to Play Fantasy Cricket on Cricket Fantasy
                 </div>
-                <div className="info">
                     Cricket Fantasy is an exciting, skill-based platform where you create a virtual cricket team, compete with others, and earn points based on real-life performances.<p>No real money is involved</p>—just pure cricket strategy and fun!
                 </div>
                 <div className="guide">
