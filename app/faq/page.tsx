@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 import "./style.scss"
 
@@ -108,7 +109,7 @@ const FAQ = () => {
             <div className="faq-page">
                 <div className="heading">Frequently Asked Questions (FAQs) – Cricket Fantasy</div>
                 <div className="subheading">
-                    Welcome to the Cricket Fantasy FAQ section! Find answers to the most common questions about our fantasy cricket platform, gameplay, legality, and support. If you need further assistance, please visit our <Link href="/contact">Contact Us page.</Link>
+                    Welcome to the Cricket Fantasy FAQ section! Find answers to the most common questions about our fantasy cricket platform, gameplay, legality, and support. If you need further assistance, please visit our <Link href="/contact" >Contact Us page.</Link>
                 </div>
                 <div className="FAQS">
 
@@ -131,7 +132,7 @@ const FAQ = () => {
                         Still Have Questions?
                     </div>
                     <div className="message">
-                        Contact our support team via the <Link href="/contact">Contact Us</Link> page for further assistance.
+                        Contact our support team via the <Link href="/contact" >Contact Us</Link> page for further assistance.
                     </div>
                 </div>
             </div>

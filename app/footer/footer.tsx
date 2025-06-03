@@ -1,13 +1,17 @@
+"use client"
 import Link from "next/link"
 import "./footer.scss"
+import MyAd from "../myads/myads"
 
 const Footer = () => {
   return (
+    <>
+    <MyAd/>
     <footer className="footer">
       <div className="footer-web-info">
         <div className="footer-branding">
           <h2 className="footer-name">
-            <Link href="/">Logo Design</Link>
+            <Link href="/" >Logo Design</Link>
           </h2>
           <p className="footer-tagline">Cricket Fantasy</p>
         </div>
@@ -15,15 +19,15 @@ const Footer = () => {
         <div className="otherlinks">
           <h3 className="footer-heading">Quick Links</h3>
           <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About Us</Link></li>
-            <li><Link href="/faq">FAQ</Link></li>
-            <li><Link href="/how-to-play">How To Play</Link></li>
+            <li><Link href="/"  >Home</Link></li>
+            <li><Link href="/about" >About Us</Link></li>
+            <li><Link href="/faq"  >FAQ</Link></li>
+            <li><Link href="/how-to-play" >How To Play</Link></li>
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link href="/fair-play-policy">Fair Play Policy</Link></li>
-            <li><Link href="/terms-and-conditions">Terms & Conditions</Link></li>
-            <li><Link href="/disclaimer">Disclaimer & Legit Notice</Link></li>
-            <li><Link href="/contact">Contact Us</Link></li>
+            <li><Link href="/fair-play-policy" >Fair Play Policy</Link></li>
+            <li><Link href="/terms-and-conditions"  >Terms & Conditions</Link></li>
+            <li><Link href="/disclaimer"  >Disclaimer & Legit Notice</Link></li>
+            <li><Link href="/contact"  >Contact Us</Link></li>
           </ul>
         </div>
       </div>
@@ -35,6 +39,7 @@ const Footer = () => {
         </p>
       </div>
     </footer>
+    </>
   )
 }
 

@@ -1,5 +1,7 @@
+"use client"
 import React from 'react';
 import "./style.scss"
+import Link from 'next/link';
 
 const TermsConditions = () => {
   return (
@@ -100,8 +102,8 @@ const TermsConditions = () => {
         <h2>10. Contact Us</h2>
         <p>For any questions or clarifications, please reach out to our support team:</p>
         <ul>
-          <li>Email: <a href="mailto:support@khelofantasy.site">support@khelofantasy.site</a></li>
-          <li>Contact Page: <a href="#">Click Here</a></li>
+          <li>Email: <a href="mailto:support@khelofantasy.site" target="_blank" >support@khelofantasy.site</a></li>
+          <li>Contact Page: <Link href="/contact" >Click Here</Link></li>
         </ul>
       </section>
     </div>

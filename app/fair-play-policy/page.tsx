@@ -1,5 +1,7 @@
+"use client"
 import React from 'react';
 import styles from './style.module.scss';
+import Link from 'next/link';
 
 const FairPlayPolicy = () => {
   return (
@@ -43,7 +45,7 @@ const FairPlayPolicy = () => {
       <section>
         <h2>4. Reporting Cheating or Violations</h2>
         <p>
-          Users can report any suspicious activity via <a href="mailto:support@reddyannagamess3.shop">support@reddyannagamess3.shop</a>.
+          Users can report any suspicious activity via <a href="mailto:support@reddyannagamess3.shop" target="_blank" >support@reddyannagamess3.shop</a>.
           We encourage users to maintain a fair and competitive environment by reporting unethical behavior.
           Reports will be confidentially reviewed, and necessary actions will be taken against violators.
         </p>
@@ -63,8 +65,8 @@ const FairPlayPolicy = () => {
           For inquiries related to fair play violations or policy clarifications:
         </p>
         <ul>
-          <li>Email: <a href="mailto:support@reddyannagamess3.shop">support@reddyannagamess3.shop</a></li>
-          <li>Contact Page: <a href="#">Click Here</a></li>
+          <li>Email: <Link href="mailto:support@reddyannagamess3.shop" target="_blank">support@reddyannagamess3.shop</Link></li>
+          <li>Contact Page: <Link href="/contact" >Click Here</Link></li>
         </ul>
       </section>
     </div>

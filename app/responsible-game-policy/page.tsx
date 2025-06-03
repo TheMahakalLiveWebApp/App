@@ -1,5 +1,7 @@
+"use client"
 import React from 'react';
 import styles from './ResponsibleGaming.module.scss';
+import Link from 'next/link';
 
 const ResponsibleGaming = () => {
   return (
@@ -32,7 +34,7 @@ const ResponsibleGaming = () => {
         <h2>3. Self-Exclusion & Account Limits</h2>
         <p>
           Users who feel they need a break from the platform can request temporary or permanent self-exclusion.
-          Self-exclusion requests can be made by contacting <a href="mailto:support@khelofantasy.site">support@khelofantasy.site</a>.
+          Self-exclusion requests can be made by contacting <a href="mailto:support@khelofantasy.site" target="_blank" >support@khelofantasy.site</a>.
           During self-exclusion, users will not be able to log in, participate in contests,
           or reactivate their account until the exclusion period ends.
         </p>
@@ -58,8 +60,8 @@ const ResponsibleGaming = () => {
       <section>
         <h2>6. Resources for Responsible Gaming</h2>
         <ul>
-          <li><a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer">GambleAware</a></li>
-          <li><a href="https://www.responsiblegambling.org" target="_blank" rel="noopener noreferrer">Responsible Gaming Council</a></li>
+          <li><a href="https://www.begambleaware.org" target="_blank" >GambleAware</a></li>
+          <li><a href="https://www.responsiblegambling.org" target="_blank" >Responsible Gaming Council</a></li>
           <li>Your Local Mental Health Support Services</li>
         </ul>
       </section>
@@ -70,8 +72,8 @@ const ResponsibleGaming = () => {
           If you need assistance with responsible gaming, self-exclusion, or have concerns, reach out to us:
         </p>
         <ul>
-          <li>Email: <a href="mailto:support@khelofantasy.site">support@khelofantasy.site</a></li>
-          <li>Contact Page: <a href="#">Click Here</a></li>
+          <li>Email: <a href="mailto:support@khelofantasy.site" target="_blank" >support@khelofantasy.site</a></li>
+          <li>Contact Page: <Link href="/contact">Click Here</Link></li>
         </ul>
       </section>
 

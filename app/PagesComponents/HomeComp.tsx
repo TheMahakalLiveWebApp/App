@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -110,7 +112,7 @@ const HeroSection = () => (
             <h4>
                 Test your cricket knowledge, create your dream team, and compete for glory—all for free!
             </h4>
-            <Link href="/hel">
+            <Link href="/contact">
                 <button>Join Now</button>
             </Link>
         </div>

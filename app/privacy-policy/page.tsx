@@ -1,5 +1,8 @@
+"use client"
+
 import React from 'react';
 import "./style.scss"
+import Link from 'next/link';
 
 const PrivacyPolicy = () => {
   return (
@@ -75,7 +78,7 @@ const PrivacyPolicy = () => {
 
         <h3>4.3 Account Deletion</h3>
         <p>
-          To delete your account and remove associated data, contact us at <a href="mailto:support@khelofantasy.site">support@khelofantasy.site</a>.
+          To delete your account and remove associated data, contact us at <a href="mailto:support@khelofantasy.site" target="_blank" >support@khelofantasy.site</a>.
         </p>
       </section>
 
@@ -95,8 +98,8 @@ const PrivacyPolicy = () => {
         </p>
         <p>For privacy-related inquiries, contact:</p>
         <ul>
-          <li>Email: <a href="mailto:privacy@khelofantasy.site">privacy@khelofantasy.site</a></li>
-          <li>Contact Page: <a href="#">Click Here</a></li>
+          <li>Email: <a href="mailto:privacy@khelofantasy.site" target="_blank" >privacy@khelofantasy.site</a></li>
+          <li>Contact Page: <Link href="/contact" >Click Here</Link></li>
         </ul>
       </section>
     </div>

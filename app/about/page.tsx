@@ -1,7 +1,8 @@
+"use client"
+
 // Updated TSX file for better responsiveness and structure
 import Link from "next/link"
 import "./style.scss"
-
 const reasons = [
     {
         header: "100% Free-to-Play",
@@ -74,7 +75,7 @@ const About = () => {
                     </ul>
                 </div>
                 <div className="conclusion">
-                    <span>For full details, check our <Link href="/policy">Terms & Conditions</Link> and <Link href="/Disclaimer">Disclaimer</Link>.</span>
+                    <span>For full details, check our <Link href="/terms-and-conditions">Terms & Conditions</Link> and <Link href="/Disclaimer">Disclaimer</Link>.</span>
                 </div>
             </section>
 
@@ -90,7 +91,7 @@ const About = () => {
                 <div className="about">
                     <div className="subheading">Have questions, feedback, or need support? We’re here to help!</div>
                     <div className="info">
-                        <li><p>Email</p>: <Link href="mailto:support@khelofantasy.site">support@khelofantasy.site</Link></li>
+                        <li><p>Email</p>: <a href="mailto:support@khelofantasy.site" target="_blank">support@khelofantasy.site</a></li>
                         <li>Address: Wadgaon Sheri, Pune, Maharashtra 411014</li>
                     </div>
                 </div>

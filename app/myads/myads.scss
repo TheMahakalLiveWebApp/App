@@ -1,0 +1,62 @@
+.my-ad-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  padding: 20px 24px;
+  border-radius: 18px;
+  max-width: 320px;
+  z-index: 999;
+  border: 1px solid #e5e7eb;
+  backdrop-filter: blur(12px);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  .my-ad-message {
+    color: #1f2937;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+
+  .my-ad-button {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+
+    &:hover {
+      background-color: #1d4ed8;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+    }
+  }
+
+  @media (max-width: 600px) {
+    position: static; 
+    margin: 20px auto;
+    max-width: 90%;
+    padding: 16px 20px;
+
+    .my-ad-message {
+      font-size: 0.95rem;
+    }
+
+    .my-ad-button {
+      font-size: 0.9rem;
+      padding: 10px 14px;
+    }
+  }
+}
