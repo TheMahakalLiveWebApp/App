@@ -1,6 +1,10 @@
 @use "sass:color";
 
 
+svg{
+  font-size:4rem;
+}
+
 body {
   overflow: auto; // Allow scrolling
   scrollbar-width: none; // Firefox
