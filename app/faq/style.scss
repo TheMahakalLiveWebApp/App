@@ -7,7 +7,7 @@
 .faq-page{
     background-color: #f9f9f9;
     padding: 20px 80px;
-    padding-top: 40px;
+    padding-top: 85px;
     .heading{
         font-size: 2.2rem;
         font-weight: 800;
@@ -74,17 +74,17 @@
 
 @media screen and (max-width: 800px) {
         .faq-page{
-            padding: 20px 60px;
+            padding: 85px 60px;
         }
 }
 @media screen and (max-width: 700px) {
         .faq-page{
-            padding: 20px 40px;
+            padding: 85px 40px;
         }
 }
 @media screen and (max-width: 600px) {
         .faq-page{
-            padding: 20px 20px;
+            padding: 85px 20px;
         }
 }
 
