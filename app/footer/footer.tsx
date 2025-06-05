@@ -24,6 +24,7 @@ const Footer = () => {
             <li><Link href="/faq"  >FAQ</Link></li>
             <li><Link href="/how-to-play" >How To Play</Link></li>
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+            <li><Link href="/responsible-game-policy">Responsible Gaming</Link></li>
             <li><Link href="/fair-play-policy" >Fair Play Policy</Link></li>
             <li><Link href="/terms-and-conditions"  >Terms & Conditions</Link></li>
             <li><Link href="/disclaimer"  >Disclaimer & Legit Notice</Link></li>

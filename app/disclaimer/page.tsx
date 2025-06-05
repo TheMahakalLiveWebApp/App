@@ -69,7 +69,6 @@ const DisclaimerLegality = () => {
         <h2>7. Contact Us</h2>
         <p>For legal inquiries, please reach out to:</p>
         <ul>
-          <li>Email: <a href="mailto:legal@reddyannagamess3.shop" target="_blank" >legal@reddyannagamess3.shop</a></li>
           <li>Contact Page: <Link href="/contact">Click Here</Link></li>
         </ul>
       </section>

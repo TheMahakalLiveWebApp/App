@@ -90,10 +90,7 @@ const About = () => {
                 <div className="heading">Contact Us</div>
                 <div className="about">
                     <div className="subheading">Have questions, feedback, or need support? We’re here to help!</div>
-                    <div className="info">
-                        <li><p>Email</p>: <a href="mailto:support@khelofantasy.site" target="_blank">support@khelofantasy.site</a></li>
-                        <li>Address: Wadgaon Sheri, Pune, Maharashtra 411014</li>
-                    </div>
+                    
                 </div>
                 <div className="conclusion">For assistance, visit our <Link href="/faq">FAQ</Link> or <Link href="/contact">Contact Us</Link> page.</div>
             </section>

@@ -102,7 +102,6 @@ const TermsConditions = () => {
         <h2>10. Contact Us</h2>
         <p>For any questions or clarifications, please reach out to our support team:</p>
         <ul>
-          <li>Email: <a href="mailto:support@khelofantasy.site" target="_blank" >support@khelofantasy.site</a></li>
           <li>Contact Page: <Link href="/contact" >Click Here</Link></li>
         </ul>
       </section>

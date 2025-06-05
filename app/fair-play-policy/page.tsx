@@ -65,7 +65,6 @@ const FairPlayPolicy = () => {
           For inquiries related to fair play violations or policy clarifications:
         </p>
         <ul>
-          <li>Email: <Link href="mailto:support@reddyannagamess3.shop" target="_blank">support@reddyannagamess3.shop</Link></li>
           <li>Contact Page: <Link href="/contact" >Click Here</Link></li>
         </ul>
       </section>

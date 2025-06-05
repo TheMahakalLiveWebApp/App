@@ -72,7 +72,6 @@ const ResponsibleGaming = () => {
           If you need assistance with responsible gaming, self-exclusion, or have concerns, reach out to us:
         </p>
         <ul>
-          <li>Email: <a href="mailto:support@khelofantasy.site" target="_blank" >support@khelofantasy.site</a></li>
           <li>Contact Page: <Link href="/contact">Click Here</Link></li>
         </ul>
       </section>

@@ -98,7 +98,6 @@ const PrivacyPolicy = () => {
         </p>
         <p>For privacy-related inquiries, contact:</p>
         <ul>
-          <li>Email: <a href="mailto:privacy@khelofantasy.site" target="_blank" >privacy@khelofantasy.site</a></li>
           <li>Contact Page: <Link href="/contact" >Click Here</Link></li>
         </ul>
       </section>
