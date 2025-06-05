@@ -21,7 +21,7 @@ const NavBar = () => {
       <div className={styles.NavBar}>
         <div className={styles.weblogo}>
           <div className="logo">
-            <h3><Link href="/" className={styles.weblogotext} style={{color:"white"}}>Logo Design</Link></h3>
+            <h3><Link href="/" className={styles.weblogotext} style={{color:"white"}}>Mahakal</Link></h3>
           </div>
         </div>
 

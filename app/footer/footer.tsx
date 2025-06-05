@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer-web-info">
         <div className="footer-branding">
           <h2 className="footer-name">
-            <Link href="/" >Logo Design</Link>
+            <Link href="/" >Mahakal</Link>
           </h2>
           <p className="footer-tagline">Cricket Fantasy</p>
         </div>
