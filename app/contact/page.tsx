@@ -8,7 +8,7 @@ const ContactPage = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({});
-  const number = "8410072941"
+  const number = "7037803299"
 
   const validate = () => {
     const newErrors: typeof errors = {};
