@@ -7,6 +7,7 @@ import { Footer } from "./footer/footer";
 import AgeGateWrapper from "./ageverify/AgeVerifyer"; // client component
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      {/* <Head>
+        <link rel="icon" href="/logoicon.ico" />
+      </Head> */}
 
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Script
