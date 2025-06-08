@@ -34,7 +34,8 @@ const ResponsibleGaming = () => {
         <h2>3. Self-Exclusion & Account Limits</h2>
         <p>
           Users who feel they need a break from the platform can request temporary or permanent self-exclusion.
-          Self-exclusion requests can be made by contacting <a href="mailto:support@khelofantasy.site" target="_blank" >support@khelofantasy.site</a>.
+          {/* Self-exclusion requests can be made by contacting <a href="mailto:support@khelofantasy.site" target="_blank" >support@khelofantasy.site</a>. */}
+          Self-exclusion requests can be made by contacting <a href="/contact" target="_blank" >Us</a>.
           During self-exclusion, users will not be able to log in, participate in contests,
           or reactivate their account until the exclusion period ends.
         </p>

@@ -78,7 +78,8 @@ const PrivacyPolicy = () => {
 
         <h3>4.3 Account Deletion</h3>
         <p>
-          To delete your account and remove associated data, contact us at <a href="mailto:support@khelofantasy.site" target="_blank" >support@khelofantasy.site</a>.
+          To delete your account and remove associated data, contact us at <a href="/contact" target="_blank" >Contact</a>.
+          {/* To delete your account and remove associated data, contact us at <a href="mailto:support@khelofantasy.site" target="_blank" >support@khelofantasy.site</a>. */}
         </p>
       </section>
 

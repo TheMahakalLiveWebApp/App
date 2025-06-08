@@ -45,7 +45,8 @@ const FairPlayPolicy = () => {
       <section>
         <h2>4. Reporting Cheating or Violations</h2>
         <p>
-          Users can report any suspicious activity via <a href="mailto:support@reddyannagamess3.shop" target="_blank" >support@reddyannagamess3.shop</a>.
+          {/* Users can report any suspicious activity via <a href="mailto:support@reddyannagamess3.shop" target="_blank" >support@reddyannagamess3.shop</a>. */}
+          Users can report any suspicious activity via <a href="/contact" target="_blank" >Contacting Us</a>.
           We encourage users to maintain a fair and competitive environment by reporting unethical behavior.
           Reports will be confidentially reviewed, and necessary actions will be taken against violators.
         </p>
