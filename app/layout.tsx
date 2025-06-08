@@ -6,6 +6,7 @@ import NavBar from "./navbar";
 import { Footer } from "./footer/footer";
 import AgeGateWrapper from "./ageverify/AgeVerifyer"; // client component
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7558776021474229"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <AgeGateWrapper>
           <NavBar />
           {children}
