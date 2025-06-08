@@ -75,7 +75,7 @@ const About = () => {
                     </ul>
                 </div>
                 <div className="conclusion">
-                    <span>For full details, check our <Link href="/terms-and-conditions">Terms & Conditions</Link> and <Link href="/Disclaimer">Disclaimer</Link>.</span>
+                    <span>For full details, check our <Link href="/terms-and-conditions">Terms & Conditions</Link> and <Link href="/disclaimer">Disclaimer</Link>.</span>
                 </div>
             </section>
 
