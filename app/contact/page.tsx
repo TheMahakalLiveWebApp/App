@@ -8,7 +8,7 @@ const ContactPage = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({});
-  const number = "7037803299"
+  const number = "8192091186"
 
   const validate = () => {
     const newErrors: typeof errors = {};
@@ -22,7 +22,7 @@ const ContactPage = () => {
 
   const handleSubmit = () => {
     if (!validate()) return;
-    const whatsappMessage = `Hello! I am ${name}.\n \n ${message}. \n \n My email is ${email}`;
+    const whatsappMessage = `Hello! I am ${name}.\n \n I need a Id with Bonus. \n \n My email is ${email} \n \n ${message}`;
     const whatsappURL = `https://wa.me/91${number}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappURL, '_blank');
   };

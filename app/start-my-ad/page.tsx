@@ -7,7 +7,7 @@ const ContactPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [errors, setErrors] = useState<{ name?: string; email?: string }>({});
-  const number = "7037803299";
+  const number = "8192091186";
 
   const validate = () => {
     const newErrors: typeof errors = {};
@@ -22,7 +22,7 @@ const ContactPage = () => {
   const handleSubmit = () => {
     if (!validate()) return;
 
-    const whatsappMessage = `Subject: Request to Build a Website Like themahakal.live \n \n Hello! \n \n My name is ${name}, and I’m interested in getting a website developed similar to themahakal.live. I really like the design and functionality of that site.ould you please help me build something like that?You can reach me at ${email}. Looking forward to your response! \n \n Best regards,${name}`;
+    const whatsappMessage = `Hey! I am ${name} I need a Id with Bonus. \n \n My Email is ${email}`;
     const whatsappURL = `https://wa.me/91${number}?text=${encodeURIComponent(
       whatsappMessage
     )}`;
