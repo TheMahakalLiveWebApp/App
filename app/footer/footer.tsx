@@ -2,11 +2,14 @@
 import Link from "next/link"
 import "./footer.scss"
 import MyAd from "../myads/myads"
+import FantasyAdsPage from "./banner/Banner"
+// import FantasyAdsPage from "./banner/Banner"
 
 const Footer = () => {
   return (
     <>
     <MyAd/>
+    <FantasyAdsPage/>
     <footer className="footer">
       <div className="footer-web-info">
         <div className="footer-branding">
