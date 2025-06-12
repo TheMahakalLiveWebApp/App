@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import GuideHero from "../../Assests/GuideHero.jpg";
-import "./Home.scss"
+import "./Home.scss";
 
 // Feature and Reason data arrays
 const features = [
@@ -40,7 +40,6 @@ const features = [
         title: "100% Legal",
         desc: "We comply with Indian laws governing fantasy sports for a worry-free experience.", 
         color: "#800000"
-
     }
 ];
 
@@ -71,7 +70,6 @@ const reasons = [
     }
 ];
 
-
 const GuideSection = () => (
     <div className="guide-sec">
         <h3>How to Play</h3>
@@ -83,7 +81,6 @@ const GuideSection = () => (
                     alt="Fantasy Cricket Guide"
                     width={600}
                     height={400}
-                    // unoptimized
                     priority
                 />
             </div>
@@ -98,29 +95,33 @@ const GuideSection = () => (
     </div>
 );
 
-// Hero Section
-const HeroSection = () => (
-    <div className="hero-sec">
-        <div>
+const HeroSection = () => {
+    // WhatsApp settings — easily editable
+    const whatsappNumber = "918192091186"; // Replace with your number
+    const whatsappMessage = "Hi, I want a id with Bonus."; // Custom message
 
-        <div className="glass">
-
+    return (
+        <div className="hero-sec">
+            <div>
+                <div className="glass"></div>
+                <div className="hero-info">
+                    <h1>Experience Fantasy Cricket Like Never Before!</h1>
+                    <h4>
+                        Test your cricket knowledge, create your dream team, and compete for glory—all for free!
+                    </h4>
+                    <a
+                        href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button>Join Now</button>
+                    </a>
+                </div>
+            </div>
         </div>
+    );
+};
 
-        <div className="hero-info">
-            <h1>Experience Fantasy Cricket Like Never Before!</h1>
-            <h4>
-                Test your cricket knowledge, create your dream team, and compete for glory—all for free!
-            </h4>
-            <Link href="/contact">
-                <button>Join Now</button>
-            </Link>
-        </div>
-        </div>
-    </div>
-);
-
-// Features Section
 const FeaturesSection = () => (
     <div className="features-sec">
         <h3>How It Works?</h3>
@@ -128,7 +129,7 @@ const FeaturesSection = () => (
             {features.map(({ icon, title, desc, color }, index) => (
                 <div className="feature" key={index}>
                     <div className='feature-icon'>
-                        <FontAwesomeIcon icon={icon} style={{color:color }} />
+                        <FontAwesomeIcon icon={icon} style={{ color: color }} />
                     </div>  
                     <div className="feature-title">{title}</div>
                     <div className="feature-desc">{desc}</div>
@@ -138,10 +139,6 @@ const FeaturesSection = () => (
     </div>
 );
 
-// Guide Section
-
-
-// Reasons Section
 const ReasonsSection = () => (
     <div className="reasons-sec">
         <h3>Why Choose Cricket Fantasy?</h3>
@@ -149,7 +146,7 @@ const ReasonsSection = () => (
             {reasons.map(({ icon, title, desc, color }, index) => (
                 <div className="reason" key={index}>
                     <div className="reason-icon">
-                        <FontAwesomeIcon icon={icon} style={{color: color}} />
+                        <FontAwesomeIcon icon={icon} style={{ color: color }} />
                     </div>
                     <div className="reason-title">{title}</div>
                     <div className="reason-desc">{desc}</div>
@@ -159,7 +156,6 @@ const ReasonsSection = () => (
     </div>
 );
 
-// Main Home Component
 const HomeComponent = () => {
     return (
         <>

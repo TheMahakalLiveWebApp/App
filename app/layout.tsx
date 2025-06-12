@@ -31,10 +31,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <Head>
-        <link rel="icon" href="/logoicon.ico" />
-      </Head> */}
-
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Script
           async
